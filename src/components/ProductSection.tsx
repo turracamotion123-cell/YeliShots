@@ -170,6 +170,25 @@ export default function ProductSection() {
               >
                 Comprar
               </button>
+              
+              <div className="grid grid-cols-3 gap-4 mt-6">
+                {[
+                  { label: "Envío Seguro", icon: "🚚" },
+                  { label: "Garantía Yeli", icon: "🛡️" },
+                  { label: "Atención 24/7", icon: "💬" }
+                ].map((badge, i) => (
+                  <div key={i} className="flex flex-col items-center gap-2 text-center">
+                    <span className="text-2xl">{badge.icon}</span>
+                    <span className="font-body text-[10px] text-white/40 uppercase tracking-widest leading-tight">
+                      {badge.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              
+              <p className="mt-8 text-[10px] text-white/30 font-body uppercase tracking-[0.2em] text-center italic">
+                * Si no sentís la intensidad en tu primera gomita, te devolvemos el respeto (y la plata).
+              </p>
             </div>
           </motion.div>
         </div>

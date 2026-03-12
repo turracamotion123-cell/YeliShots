@@ -56,9 +56,9 @@ export default function Varieties() {
                 <div className={`h-1 w-20 bg-gradient-to-r ${v.color} mx-auto md:mx-0 mb-8`}></div>
                 <a 
                   href="#products" 
-                  className="inline-block px-8 py-3 border border-white/20 text-white font-display text-xl uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+                  className="inline-block px-8 py-3 bg-white text-black font-display text-xl uppercase tracking-wider hover:bg-neon-magenta hover:text-white transition-all duration-300"
                 >
-                  Elegir Sabor
+                  Quiero este Pack
                 </a>
               </div>
             </motion.div>

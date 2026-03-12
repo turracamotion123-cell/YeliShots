@@ -5,12 +5,13 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Marquee from './components/Marquee';
 import FloatingGummies from './components/FloatingGummies';
-import AboutSection from './components/AboutSection';
 import Features from './components/Features';
+import ComparisonSection from './components/ComparisonSection';
 import ProductSection from './components/ProductSection';
 import UnboxingSection from './components/UnboxingSection';
 import Varieties from './components/Varieties';
 import Testimonials from './components/Testimonials';
+import AboutSection from './components/AboutSection';
 import FAQ from './components/FAQ';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
@@ -36,11 +37,10 @@ export default function App() {
           <Hero />
           <Marquee />
           <FloatingGummies />
-          <AboutSection />
-          <Features />
-          <UnboxingSection />
-          <ProductSection />
           <Varieties />
+          <ProductSection />
+          <UnboxingSection />
+          <ComparisonSection />
           <Testimonials />
           <FAQ />
           <Newsletter />

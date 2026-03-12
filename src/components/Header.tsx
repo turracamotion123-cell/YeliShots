@@ -22,16 +22,14 @@ export default function Header() {
           />
         </a>
 
-        <nav className="hidden md:flex gap-8 font-body text-sm uppercase tracking-widest font-semibold text-white/80 items-center">
-          <a href="#hero" className="hover:text-neon-magenta transition-colors">La Experiencia</a>
-          <a href="#varieties" className="hover:text-neon-magenta transition-colors">Variedades</a>
-          <a href="#products" className="hover:text-neon-magenta transition-colors">Packs de Previa</a>
-          <a href="#about" className="hover:text-white transition-colors">La Tribu</a>
+        <nav className="hidden md:flex gap-12 font-body text-sm uppercase tracking-widest font-semibold text-white/80 items-center">
+          <a href="#varieties" className="hover:text-neon-magenta transition-colors">Sabores</a>
+          <a href="#products" className="hover:text-neon-magenta transition-colors">Packs</a>
           <a 
             href="#products" 
-            className="ml-4 px-6 py-2 bg-neon-magenta text-white font-display text-lg uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(255,0,127,0.3)]"
+            className="px-8 py-3 bg-neon-magenta text-white font-display text-xl uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_30px_rgba(255,0,127,0.4)]"
           >
-            Comprar
+            Comprar Ahora
           </a>
         </nav>
 
