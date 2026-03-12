@@ -8,11 +8,14 @@ import FloatingGummies from './components/FloatingGummies';
 import AboutSection from './components/AboutSection';
 import Features from './components/Features';
 import ProductSection from './components/ProductSection';
+import UnboxingSection from './components/UnboxingSection';
 import Varieties from './components/Varieties';
+import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import StickyCTA from './components/StickyCTA';
 
 export default function App() {
   const [isVerified, setIsVerified] = useState(false);
@@ -35,12 +38,15 @@ export default function App() {
           <FloatingGummies />
           <AboutSection />
           <Features />
+          <UnboxingSection />
           <ProductSection />
           <Varieties />
+          <Testimonials />
           <FAQ />
           <Newsletter />
         </main>
         <Footer />
+        <StickyCTA />
       </div>
     </div>
   );

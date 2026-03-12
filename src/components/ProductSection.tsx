@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
+import SuccessModal from './SuccessModal';
 
 export default function ProductSection() {
   const [selectedTier, setSelectedTier] = useState<'1' | '10' | '20'>('10');
@@ -33,8 +34,16 @@ export default function ProductSection() {
     }
   };
 
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleBuy = () => {
+    setShowSuccess(true);
+    window.open(`https://wa.me/5493878406946?text=Hola!%20Quiero%20comprar%20el%20${encodeURIComponent(tiers[selectedTier].label)}%20de%20YeliShots%20(${tiers[selectedTier].units})`, '_blank');
+  };
+
   return (
     <section id="products" className="relative py-32 px-4 md:px-12 bg-black min-h-screen flex items-center">
+      <SuccessModal isOpen={showSuccess} onClose={() => setShowSuccess(false)} />
       <div className="max-w-7xl mx-auto w-full">
         
         <div className="text-center mb-20">
@@ -115,6 +124,12 @@ export default function ProductSection() {
 
             {/* Tier Selector */}
             <div className="flex flex-col gap-4 mb-10">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
+                <span className="text-red-500 font-body text-xs font-bold uppercase tracking-widest">
+                  Stock Limitado: Solo 7 packs disponibles para hoy
+                </span>
+              </div>
               {(Object.keys(tiers) as Array<keyof typeof tiers>).map((key) => (
                 <button 
                   key={key}
@@ -126,7 +141,14 @@ export default function ProductSection() {
                   }`}
                 >
                   <div className="flex flex-col items-start">
-                    <span className="font-display text-2xl uppercase tracking-wider">{tiers[key].label}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="font-display text-2xl uppercase tracking-wider">{tiers[key].label}</span>
+                      {key === '10' && (
+                        <span className="bg-neon-magenta text-white text-[10px] px-2 py-0.5 font-bold uppercase tracking-tighter animate-pulse">
+                          Más Vendido
+                        </span>
+                      )}
+                    </div>
                     <span className="font-body text-sm tracking-widest">{tiers[key].units}</span>
                   </div>
                   <div className="flex flex-col items-end">
@@ -142,14 +164,12 @@ export default function ProductSection() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <a 
-                href={`https://wa.me/5493878406946?text=Hola!%20Quiero%20comprar%20el%20${encodeURIComponent(tiers[selectedTier].label)}%20de%20YeliShots%20(${tiers[selectedTier].units})`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={handleBuy}
                 className="w-full py-5 bg-[#25D366] text-white font-body font-bold text-xl uppercase tracking-wider hover:bg-[#128C7E] transition-colors duration-300 flex items-center justify-center gap-3"
               >
                 Comprar
-              </a>
+              </button>
             </div>
           </motion.div>
         </div>

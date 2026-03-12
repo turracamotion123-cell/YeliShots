@@ -43,7 +43,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            Otros te dan un "touch". <br className="md:hidden" /> Nosotros te damos el golpe entero.
+            La dosis de intensidad <br className="md:hidden" /> que tu noche estaba esperando.
           </motion.p>
 
           <motion.div

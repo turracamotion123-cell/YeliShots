@@ -3,15 +3,15 @@ import { motion } from 'motion/react';
 const features = [
   { 
     title: "PEGADA PERFECTA", 
-    desc: "Ni un 'touch' ni una gota. La dosis exacta para prender la noche sin apagar la memoria. Diseñado para aguantar hasta el after." 
+    desc: "La dosis exacta para prender la noche sin apagar la memoria. Diseñado para aguantar desde la previa hasta el after con la misma intensidad." 
   },
   { 
     title: "SABOR EXPLOSIVO", 
-    desc: "Olvídate del gusto a jarabe barato. Mixología de alta gama encapsulada en una gomita. Sabores intensos que explotan en tu boca." 
+    desc: "Olvídate de los sabores artificiales. Mixología de alta gama encapsulada en una gomita. Sabores intensos que explotan en tu boca." 
   },
   { 
     title: "ACTITUD VIP", 
-    desc: "El packaging que todos van a mirar cuando lo saques del bolsillo. No es una golosina, es un statement. Eres el main character." 
+    desc: "El packaging que todos van a mirar cuando lo saques del bolsillo. No es una golosina, es un statement. Sos el main character de la noche." 
   }
 ];
 
@@ -21,8 +21,8 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-6xl text-white uppercase tracking-tighter mb-4">
-            OTROS TE DAN UN <span className="text-white/30 line-through">TOUCH</span>.<br/>
-            NOSOTROS TE DAMOS <span className="text-neon-magenta">LA NOCHE ENTERA.</span>
+            DISEÑADO PARA DOMINAR<br/>
+            <span className="text-neon-magenta">LA NOCHE ENTERA.</span>
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">

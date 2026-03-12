@@ -53,7 +53,13 @@ export default function Varieties() {
               <div className="w-full md:w-1/2 text-center md:text-left">
                 <h3 className="font-display text-4xl text-white uppercase tracking-tighter mb-4">{v.name}</h3>
                 <p className="font-body text-lg text-white/70 leading-relaxed mb-6">{v.desc}</p>
-                <div className={`h-1 w-20 bg-gradient-to-r ${v.color} mx-auto md:mx-0`}></div>
+                <div className={`h-1 w-20 bg-gradient-to-r ${v.color} mx-auto md:mx-0 mb-8`}></div>
+                <a 
+                  href="#products" 
+                  className="inline-block px-8 py-3 border border-white/20 text-white font-display text-xl uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+                >
+                  Elegir Sabor
+                </a>
               </div>
             </motion.div>
           ))}

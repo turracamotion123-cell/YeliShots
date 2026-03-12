@@ -12,10 +12,10 @@ export default function Newsletter() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
         >
-          Unite al <span className="text-neon-magenta">VIP</span>
+          Entrá a <span className="text-neon-magenta">La Tribu</span>
         </motion.h2>
         <p className="font-body text-xl text-white/70 uppercase tracking-widest mb-12 max-w-2xl mx-auto">
-          Sé el primero en enterarte de nuevos sabores, drops limitados y las fiestas más exclusivas de la tribu.
+          No somos solo gomitas, somos un movimiento. Unite para drops exclusivos, acceso a fiestas VIP y el respeto de la tribu.
         </p>
 
         <div className="flex flex-col gap-8 max-w-2xl mx-auto">
