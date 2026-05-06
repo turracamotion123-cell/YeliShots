@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeli Shots | Inversores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root { --fuchsia: #f0146a; --yellow: #FFD700; --blue: #1A8FE3; }
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        .text-fuchsia { color: var(--fuchsia); }
+        .bg-fuchsia { background-color: var(--fuchsia); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .heading-xl { font-size: clamp(2.5rem, 8vw, 7rem); line-height: 0.9; letter-spacing: -0.04em; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed top-0 left-0 w-full z-50 p-6 flex justify-center bg-gradient-to-b from-black to-transparent">
+        <div class="flex items-center gap-2">
+            <div class="bg-fuchsia w-6 h-6 rounded-full flex items-center justify-center font-display font-bold italic text-white text-[10px]">Y</div>
+            <span class="font-display font-bold italic tracking-tighter text-lg uppercase">Yeli<span class="text-fuchsia">Shots</span></span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-4 relative text-center">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-fuchsia/10 rounded-full blur-[100px] -z-10"></div>
+        <div class="container mx-auto max-w-5xl">
+            <h1 class="font-display font-bold italic heading-xl uppercase mb-8">
+                ESTAMOS REINVENTANDO <br> <span class="text-fuchsia">CÓMO SE TOMA</span> EN ARGENTINA
+            </h1>
+            <p class="text-lg md:text-2xl text-white/70 max-w-2xl mx-auto font-light leading-relaxed mb-12 uppercase tracking-tight">
+                Llevamos las primeras gomitas con alcohol al mercado local. Ya tenemos demanda confirmada antes de producir la primera unidad.
+            </p>
+            <a href="#contacto" class="bg-fuchsia text-white px-10 py-5 font-display font-bold text-lg uppercase italic tracking-widest hover:scale-105 transition-transform inline-block">
+                Sumate al proyecto
+            </a>
+        </div>
+    </section>
+
+    <!-- El "Por qué" -->
+    <section class="py-24 bg-[#050505]">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display font-bold italic text-5xl uppercase mb-6 leading-none">
+                        LA NOCHE <br> SE PUSO <span class="text-white/20">ABURRIDA</span>
+                    </h2>
+                    <p class="text-white/60 leading-relaxed uppercase tracking-wide text-sm">
+                        La gente está cansada de lo mismo: latas pesadas, botellas caras y la misma experiencia de siempre. Yeli Shots es la respuesta: es <span class="text-white">portátil, divertido y está pensado para las previas de hoy</span>. No inventamos el alcohol, inventamos una forma mejor de consumirlo.
+                    </p>
+                </div>
+                <div class="glass p-8 space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-fuchsia flex items-center justify-center font-bold">1</div>
+                        <h3 class="font-display font-bold italic text-xl uppercase">Fácil de llevar</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-fuchsia flex items-center justify-center font-bold">2</div>
+                        <h3 class="font-display font-bold italic text-xl uppercase">Pegada Premium</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 bg-fuchsia flex items-center justify-center font-bold">3</div>
+                        <h3 class="font-display font-bold italic text-xl uppercase">Costo eficiente</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracción -->
+    <section class="py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-display font-bold italic text-4xl md:text-6xl uppercase mb-16 text-yellow">LO QUE LLEVAMOS HASTA HOY</h2>
+            <div class="grid grid-cols-1 gap-8 max-w-sm mx-auto mb-12">
+                <div class="p-10 glass">
+                    <div class="text-6xl font-display font-bold italic mb-2">1.000</div>
+                    <div class="text-[10px] font-mono text-white/40 uppercase tracking-[0.3em]">Unidades en preventa confirmadas</div>
+                </div>
+            </div>
+            <p class="text-[10px] text-white/40 uppercase tracking-widest max-w-lg mx-auto leading-relaxed mt-8">
+                Demanda confirmada antes de producir.
+            </p>
+        </div>
+    </section>
+
+    <!-- La Ronda -->
+    <section class="py-24 bg-white text-black">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="font-display font-bold italic text-5xl md:text-7xl uppercase mb-8">LA OPORTUNIDAD</h2>
+            <p class="text-sm uppercase font-bold tracking-widest mb-12">Estamos listos para arrancar.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="border-2 border-black p-8">
+                    <h3 class="font-display font-bold italic text-2xl mb-4 italic uppercase">¿Por qué Yeli Shots?</h3>
+                    <p class="text-xs uppercase leading-loose opacity-70 italic font-bold">"Vi una oportunidad que nadie estaba aprovechando a escala. Las gomitas con alcohol existen, pero nadie las había llevado a la previa argentina de forma seria. Yeli Shots es eso: una idea simple, ejecutada bien, en el momento justo."</p>
+                </div>
+                <div class="border-2 border-black p-8 bg-black text-white relative">
+                    <h3 class="font-display font-bold italic text-2xl mb-4 italic uppercase">La propuesta</h3>
+                    <div class="text-4xl font-display font-bold italic mb-2">$3.300.000 <span class="text-xs">ARS</span></div>
+                    <p class="text-[10px] font-mono uppercase opacity-70 mb-2 text-white/40 italic">"No te estamos pidiendo un favor. Te estamos dando acceso a algo antes que todos."</p>
+                    <div class="space-y-2 mt-4">
+                        <p class="text-[10px] font-mono uppercase text-yellow">Retorno: recuperás el doble una vez que arranquen las ventas</p>
+                        <p class="text-[10px] font-mono uppercase opacity-70">Destino: fórmula del producto — el primer paso real</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- El Founder -->
+    <section class="py-24">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <div class="w-32 h-32 bg-white/10 mx-auto mb-8 rounded-full flex items-center justify-center font-display text-4xl italic font-bold">F</div>
+            <h3 class="font-display font-bold text-3xl uppercase italic mb-2">Lautaro Locatelli</h3>
+            <p class="text-fuchsia font-mono text-xs tracking-widest uppercase mb-6">Founder</p>
+            <p class="text-white/50 text-sm uppercase leading-relaxed italic">"Vi una oportunidad y fui por ella. Necesito socios que quieran estar desde el principio. El que entra ahora entra mejor."</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-32 bg-[#0a0a0a] text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="font-display font-bold italic text-6xl md:text-8xl uppercase mb-12">HABLEMOS <br> <span class="text-fuchsia">EN SERIO</span></h2>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-left mb-20">
+                <!-- Transparency info -->
+                <div>
+                    <h3 class="font-display font-bold italic text-4xl uppercase mb-8">TRANSPARENCIA TOTAL</h3>
+                    <div class="space-y-4">
+                        <div class="glass p-6 flex justify-between items-center group cursor-pointer hover:border-fuchsia/50 transition-all">
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="file-text" class="text-white/40"></i>
+                                <span class="font-display font-bold italic text-xl uppercase">Investor Deck</span>
+                            </div>
+                            <i data-lucide="download" class="text-white/20"></i>
+                        </div>
+                        <div class="glass p-6 flex justify-between items-center group cursor-pointer hover:border-fuchsia/50 transition-all">
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="bar-chart-3" class="text-white/40"></i>
+                                <span class="font-display font-bold italic text-xl uppercase">Modelo Financiero</span>
+                            </div>
+                            <i data-lucide="download" class="text-white/20"></i>
+                        </div>
+                        <div class="glass p-6 flex justify-between items-center group cursor-pointer hover:border-fuchsia/50 transition-all">
+                            <div class="flex items-center gap-4">
+                                <i data-lucide="pie-chart" class="text-white/40"></i>
+                                <span class="font-display font-bold italic text-xl uppercase">Cap Table</span>
+                            </div>
+                            <i data-lucide="download" class="text-white/20"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Angel Investor -->
+                <div class="glass p-8 flex flex-col justify-center border-fuchsia/30">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-fuchsia flex items-center justify-center">
+                            <i data-lucide="dollar-sign" class="text-white"></i>
+                        </div>
+                        <h3 class="font-display font-bold italic text-2xl uppercase">¿SOS INVERSOR ÁNGEL?</h3>
+                    </div>
+                    <p class="text-white/60 text-sm uppercase tracking-wider leading-relaxed mb-8">
+                        Si disponés de capital estratégico y querés participar en la expansión regional de la marca, contactanos directamente para conocer la proyección 2026.
+                    </p>
+                    <a href="https://wa.me/5493878406946?text=Hola%20Lautaro%2C%20vi%20la%20p%C3%A1gina%20de%20Yeli%20Shots%20y%20me%20interesa%20saber%20m%C3%A1s%20sobre%20la%20inversi%C3%B3n" class="bg-white text-black px-8 py-4 font-display font-bold text-center uppercase italic tracking-widest hover:bg-fuchsia hover:text-white transition-all">
+                        AGENDAR LLAMADA
+                    </a>
+                </div>
+            </div>
+
+            <a href="https://wa.me/5493878406946?text=Hola%20Lautaro%2C%20vi%20la%20p%C3%A1gina%20de%20Yeli%20Shots%20y%20me%20interesa%20saber%20m%C3%A1s%20sobre%20la%20inversi%C3%B3n" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white px-16 py-8 font-display font-bold text-2xl uppercase italic tracking-tighter hover:bg-white hover:text-black transition-colors inline-block">
+                ESCRIBIME POR WHATSAPP
+            </a>
+            <div class="mt-8 flex flex-col items-center gap-4">
+                <a href="mailto:contacto@yelishots.com" class="text-white/40 font-mono text-xs uppercase tracking-widest hover:text-white transition-colors">
+                    contacto@yelishots.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center flex flex-col items-center gap-6">
+        <div class="flex gap-8">
+            <a href="https://www.instagram.com/yelishots?igsh=MTUyb3QwMDhoOW05cA==" target="_blank" class="text-white/40 hover:text-fuchsia transition-colors"><i data-lucide="instagram"></i></a>
+            <a href="https://www.tiktok.com/@yelishotsoficial?_r=1&_t=ZS-94a7fBBTEuX" target="_blank" class="text-white/40 hover:text-fuchsia transition-colors"><i data-lucide="music-2"></i></a>
+            <a href="https://www.facebook.com/share/15k1AZ1d8T2/" target="_blank" class="text-white/40 hover:text-fuchsia transition-colors"><i data-lucide="facebook"></i></a>
+        </div>
+        <p class="text-white/20 font-mono text-[10px] uppercase tracking-[0.5em]">&copy; 2026 Yeli Shots Argentina</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+        });
+        document.querySelectorAll('section').forEach(section => { section.classList.add('reveal'); observer.observe(section); });
+    </script>
+</body>
+</html>

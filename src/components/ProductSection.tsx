@@ -38,7 +38,7 @@ export default function ProductSection() {
 
   const handleBuy = () => {
     setShowSuccess(true);
-    window.open(`https://wa.me/5493878406946?text=Hola!%20Quiero%20comprar%20el%20${encodeURIComponent(tiers[selectedTier].label)}%20de%20YeliShots%20(${tiers[selectedTier].units})`, '_blank');
+    window.open(`https://wa.me/5493878406946?text=Hola%20Lautaro%2C%20quiero%20anotarme%20en%20la%20lista%20de%20espera%20de%20Yeli%20Shots`, '_blank');
   };
 
   return (
@@ -127,7 +127,7 @@ export default function ProductSection() {
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 bg-red-500 rounded-full animate-ping"></div>
                 <span className="text-red-500 font-body text-xs font-bold uppercase tracking-widest">
-                  Stock Limitado: Solo 7 packs disponibles para hoy
+                  ALTA DEMANDA: Pocos cupos de envío disponibles para hoy. Asegurá tu previa.
                 </span>
               </div>
               {(Object.keys(tiers) as Array<keyof typeof tiers>).map((key) => (
@@ -168,7 +168,7 @@ export default function ProductSection() {
                 onClick={handleBuy}
                 className="w-full py-5 bg-[#25D366] text-white font-body font-bold text-xl uppercase tracking-wider hover:bg-[#128C7E] transition-colors duration-300 flex items-center justify-center gap-3"
               >
-                Comprar
+                ANOTARME EN LA LISTA
               </button>
               
               <div className="grid grid-cols-3 gap-4 mt-6">

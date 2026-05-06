@@ -11,7 +11,7 @@ import ProductSection from './components/ProductSection';
 import UnboxingSection from './components/UnboxingSection';
 import Varieties from './components/Varieties';
 import Testimonials from './components/Testimonials';
-import AboutSection from './components/AboutSection';
+import { InvestmentSection } from './components/InvestmentSection';
 import FAQ from './components/FAQ';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
@@ -41,9 +41,9 @@ export default function App() {
           <ProductSection />
           <UnboxingSection />
           <ComparisonSection />
-          <Testimonials />
-          <FAQ />
+          <InvestmentSection />
           <Newsletter />
+          <FAQ />
         </main>
         <Footer />
         <StickyCTA />

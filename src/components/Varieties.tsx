@@ -55,10 +55,10 @@ export default function Varieties() {
                 <p className="font-body text-lg text-white/70 leading-relaxed mb-6">{v.desc}</p>
                 <div className={`h-1 w-20 bg-gradient-to-r ${v.color} mx-auto md:mx-0 mb-8`}></div>
                 <a 
-                  href="#products" 
+                  href="https://wa.me/5493878406946?text=Hola%20Lautaro%2C%20quiero%20anotarme%20en%20la%20lista%20de%20espera%20de%20Yeli%20Shots" 
                   className="inline-block px-8 py-3 bg-white text-black font-display text-xl uppercase tracking-wider hover:bg-neon-magenta hover:text-white transition-all duration-300"
                 >
-                  Quiero este Pack
+                  ANOTARME EN LA LISTA
                 </a>
               </div>
             </motion.div>

@@ -39,16 +39,19 @@ export default function Newsletter() {
             </button>
           </form>
 
-          <div className="flex flex-col items-center gap-4">
-            <span className="font-body text-xs text-white/40 uppercase tracking-[0.2em]">O también</span>
+          <div className="flex flex-col items-center gap-8 mt-12 pt-12 border-t border-white/10">
+            <span className="font-display text-2xl text-white uppercase tracking-[0.2em]">O dejate de vueltas</span>
             <a 
-              href="https://wa.me/5493878406946?text=Hola!%20Quiero%20unirme%20al%20Canal%20de%20WhatsApp%20VIP"
+              href="https://whatsapp.com/channel/0029Vb8MECDDzgTG3yAytN2O"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neon-magenta font-display text-xl uppercase tracking-widest hover:text-white transition-colors flex items-center gap-2"
+              className="bg-[#25D366] text-white px-12 py-8 rounded-full font-display text-2xl md:text-4xl uppercase tracking-tighter hover:scale-105 transition-all shadow-[0_20px_50px_rgba(37,211,102,0.3)] flex items-center gap-4 group"
             >
-              Unirme al Canal de WhatsApp
+              Sigue el canal en WhatsApp <span className="group-hover:translate-x-2 transition-transform">→</span>
             </a>
+            <p className="text-white/40 font-mono text-xs uppercase tracking-widest mt-4">
+              Drops exclusivos, acceso a fiestas VIP y el respeto de la tribu.
+            </p>
           </div>
         </div>
       </div>

@@ -16,7 +16,7 @@ export default function Footer() {
           <a href="https://www.instagram.com/yelishots?igsh=MTUyb3QwMDhoOW05cA==" target="_blank" rel="noopener noreferrer" className="hover:text-neon-magenta transition-colors">Instagram</a>
           <a href="https://www.tiktok.com/@yelishotsoficial?_r=1&_t=ZS-94a7fBBTEuX" target="_blank" rel="noopener noreferrer" className="hover:text-neon-magenta transition-colors">TikTok</a>
           <a href="https://www.facebook.com/share/15k1AZ1d8T2/" target="_blank" rel="noopener noreferrer" className="hover:text-neon-magenta transition-colors">Facebook</a>
-          <a href="mailto:contacto@yelishots.com" className="hover:text-white transition-colors">Contacto</a>
+          <a href="mailto:contacto@yelishots.com" className="hover:text-white transition-colors">contacto@yelishots.com</a>
         </div>
 
         <div className="font-body text-xs text-white/40 uppercase tracking-widest">

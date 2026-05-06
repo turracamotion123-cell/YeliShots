@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "¿Hacen envíos a todo el país?",
-    a: "Sí, hacemos envíos a toda Argentina y vendemos en todo el mundo. En CABA y GBA entregamos en menos de 24hs para que no te quedes sin previa."
+    a: "Sí, hacemos envíos a toda Argentina y vendemos en todo el mundo."
   },
   {
     q: "¿Tienen vencimiento?",

@@ -19,7 +19,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-7xl mx-auto w-full h-full pt-32 md:pt-40 pb-12">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-7xl mx-auto w-full h-full pt-20 pb-40">
         
         <div className="relative w-full flex flex-col items-center">
           {/* Main Headline with Integrated Image */}
@@ -47,16 +47,16 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
-            className="relative z-30"
+            className="relative z-30 mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
             <a 
-              href="#products" 
+              href="https://wa.me/5493878406946?text=Hola%20Lautaro%2C%20quiero%20anotarme%20en%20la%20lista%20de%20espera%20de%20Yeli%20Shots" 
               className="inline-block px-16 py-6 bg-neon-magenta text-white font-display text-3xl uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_40px_rgba(255,0,127,0.4)] hover:shadow-[0_0_60px_rgba(255,255,255,0.6)]"
             >
-              Armá tu Previa
+              QUIERO SER EL PRIMERO
             </a>
           </motion.div>
         </div>
